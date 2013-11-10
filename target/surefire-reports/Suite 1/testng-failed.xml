@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite 1]">
+  <listeners>
+    <listener class-name="com.epam.preproduction.helpers.ScreenShotOnFailure"/>
+  </listeners>
+  <test name="testNG test1(failed)" preserve-order="false">
+    <classes>
+      <class name="com.epam.preproduction.tests.SortingTest">
+        <methods>
+          <include name="configuration"/>
+          <include name="setUp"/>
+          <include name="testSortingByPrice" invocation-numbers="0"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>
